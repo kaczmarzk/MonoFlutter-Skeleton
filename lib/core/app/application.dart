@@ -1,6 +1,6 @@
-import 'package:crew_clash/core/injection/injection.dart';
-import 'package:crew_clash/core/routing/routing.dart';
 import 'package:flutter/material.dart';
+import 'package:skeleton/core/injection/injection.dart';
+import 'package:skeleton/core/routing/routing.dart';
 
 // This widget is the root of your application.
 class Application extends StatelessWidget {

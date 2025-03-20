@@ -1,4 +1,4 @@
-name: crew_clash
+name: skeleton
 
 packages:
   - packages/**

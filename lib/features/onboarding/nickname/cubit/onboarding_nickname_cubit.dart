@@ -1,9 +1,9 @@
-import 'package:crew_clash/features/onboarding/nickname/input/nickname_input.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:loggy/loggy.dart';
 import 'package:pkg_user/pkg_user.dart';
+import 'package:skeleton/features/onboarding/nickname/input/nickname_input.dart';
 
 part 'onboarding_nickname_state.dart';
 

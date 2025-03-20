@@ -10,12 +10,12 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:auto_route/auto_route.dart' as _i6;
-import 'package:crew_clash/features/home/view/home_screen.dart' as _i1;
-import 'package:crew_clash/features/menu/view/menu_screen.dart' as _i2;
-import 'package:crew_clash/features/onboarding/nickname/view/onboarding_screen.dart'
+import 'package:skeleton/features/home/view/home_screen.dart' as _i1;
+import 'package:skeleton/features/menu/view/menu_screen.dart' as _i2;
+import 'package:skeleton/features/onboarding/nickname/view/onboarding_screen.dart'
     as _i3;
-import 'package:crew_clash/features/shell/view/shell_screen.dart' as _i4;
-import 'package:crew_clash/features/splash/view/splash_screen.dart' as _i5;
+import 'package:skeleton/features/shell/view/shell_screen.dart' as _i4;
+import 'package:skeleton/features/splash/view/splash_screen.dart' as _i5;
 
 /// generated route for
 /// [_i1.HomeScreen]

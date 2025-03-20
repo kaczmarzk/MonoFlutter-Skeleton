@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: pkg_common_api
+dependency_overrides:
+  pkg_common_api:
+    path: ../pkg_common_api

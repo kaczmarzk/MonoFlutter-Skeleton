@@ -1,8 +1,8 @@
-import 'package:crew_clash/core/injection/injection.config.dart';
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:pkg_common_api/injectable/injectable.module.dart';
 import 'package:pkg_user/injectable/injectable.module.dart';
+import 'package:skeleton/core/injection/injection.config.dart';
 
 /// Configures dependency injection generator
 /// Run build runner every time when adding new dependencies

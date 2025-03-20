@@ -1,5 +1,5 @@
-import 'package:crew_clash/core/routing/routing.dart';
 import 'package:injectable/injectable.dart';
+import 'package:skeleton/core/routing/routing.dart';
 
 @module
 abstract class RoutingModule {

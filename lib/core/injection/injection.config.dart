@@ -9,13 +9,13 @@
 // coverage:ignore-file
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:crew_clash/core/injection/module/routing_module.dart' as _i943;
-import 'package:crew_clash/core/routing/routing.dart' as _i218;
-import 'package:crew_clash/features/home/cubit/home_cubit.dart' as _i322;
-import 'package:crew_clash/features/onboarding/nickname/cubit/onboarding_nickname_cubit.dart'
+import 'package:skeleton/core/injection/module/routing_module.dart' as _i943;
+import 'package:skeleton/core/routing/routing.dart' as _i218;
+import 'package:skeleton/features/home/cubit/home_cubit.dart' as _i322;
+import 'package:skeleton/features/onboarding/nickname/cubit/onboarding_nickname_cubit.dart'
     as _i128;
-import 'package:crew_clash/features/shell/cubit/shell_cubit.dart' as _i723;
-import 'package:crew_clash/features/splash/cubit/splash_cubit.dart' as _i181;
+import 'package:skeleton/features/shell/cubit/shell_cubit.dart' as _i723;
+import 'package:skeleton/features/splash/cubit/splash_cubit.dart' as _i181;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:pkg_common_api/injectable/injectable.module.dart' as _i635;

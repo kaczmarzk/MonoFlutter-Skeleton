@@ -1,8 +1,8 @@
-import 'package:crew_clash/core/extension/build_context_ext.dart';
-import 'package:crew_clash/features/shell/cubit/shell_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pkg_common_ui/pkg_common_ui.dart';
+import 'package:skeleton/core/extension/build_context_ext.dart';
+import 'package:skeleton/features/shell/cubit/shell_cubit.dart';
 
 class BottomNavigationWidget extends StatelessWidget {
   const BottomNavigationWidget({super.key});

@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:crew_clash/core/routing/routing.gr.dart';
+import 'package:skeleton/core/routing/routing.gr.dart';
 
 @AutoRouterConfig()
 class Routing extends RootStackRouter {

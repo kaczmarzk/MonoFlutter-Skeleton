@@ -1,10 +1,10 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:crew_clash/core/injection/injection.dart';
-import 'package:crew_clash/core/routing/routing.gr.dart';
-import 'package:crew_clash/features/shell/cubit/shell_cubit.dart';
-import 'package:crew_clash/features/shell/view/widgets/bottom_navigation_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:skeleton/core/injection/injection.dart';
+import 'package:skeleton/core/routing/routing.gr.dart';
+import 'package:skeleton/features/shell/cubit/shell_cubit.dart';
+import 'package:skeleton/features/shell/view/widgets/bottom_navigation_widget.dart';
 
 @RoutePage()
 class ShellScreen extends StatelessWidget {

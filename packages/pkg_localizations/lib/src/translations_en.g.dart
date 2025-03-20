@@ -37,7 +37,7 @@ class Translations implements BaseTranslations<SlangLocale, Translations> {
 	late final Translations _root = this; // ignore: unused_field
 
 	// Translations
-	String get title => 'CrewClash';
+	String get title => 'Skeleton';
 	late final TranslationsGenericEn generic = TranslationsGenericEn.internal(_root);
 	late final TranslationsOnboardingEn onboarding = TranslationsOnboardingEn.internal(_root);
 }
@@ -84,7 +84,7 @@ class TranslationsOnboardingInputValidationEn {
 extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'title': return 'CrewClash';
+			case 'title': return 'Skeleton';
 			case 'generic.error_message': return 'Oops, something glitched out!';
 			case 'generic.error_message_retry': return 'Oops, something glitched out! Try again.';
 			case 'onboarding.nickname_screen_title': return 'Who Are You in the Crew?';

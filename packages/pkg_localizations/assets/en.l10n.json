@@ -1,0 +1,18 @@
+{
+  "title": "CrewClash",
+  "generic": {
+    "error_message": "Oops, something glitched out!",
+    "error_message_retry": "Oops, something glitched out! Try again."
+  },
+  "onboarding": {
+    "nickname_screen_title": "Who Are You in the Crew?",
+    "nickname_screen_input_title": "YOUR NICKNAME",
+    "nickname_screen_button_title": "Continue",
+    "nickname_screen_button_hint": "Pick a name your friends will love",
+    "input_validation": {
+      "empty": "Whoops, you forgot to type a nickname!",
+      "notCorrectLength": "Length mismatch! Keep it between 3 and 15.",
+      "containsProhibitedChars": "No sneaky symbols allowed—stick to letters and numbers!"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+base_locale: en
+fallback_strategy: base_locale
+input_directory: assets
+input_file_pattern: .l10n.json
+output_directory: lib/src
+output_file_name: translations.g.dart
+enum_name: SlangLocale
+class_name: Translations

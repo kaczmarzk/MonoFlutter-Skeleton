@@ -1,0 +1,84 @@
+name: crew_clash
+
+version: 0.0.0+1
+publish_to: "none"
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+  flutter: "3.29.1"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # sl
+  injectable: 2.5.0
+  get_it: 8.0.3
+
+  # l10n
+  slang: 4.4.1
+  slang_flutter: 4.4.0
+
+  # db
+  hive_ce: 2.10.1
+
+  # state management
+  flutter_bloc: 9.0.0
+
+  # utils
+  equatable: 2.0.7
+  fpdart: 1.1.1
+  loggy: 2.0.3
+  auto_route: 9.3.0+1
+  path_provider: 2.1.5
+  rxdart: 0.28.0
+  formz: 0.8.0
+  melos: 6.3.2
+
+  # ui
+  flutter_svg: 2.0.17
+
+  # packages
+  pkg_common_api:
+    path: packages/pkg_common_api
+  pkg_common_ui:
+    path: packages/pkg_common_ui
+  pkg_localizations:
+    path: packages/pkg_localizations
+  pkg_user:
+    path: packages/pkg_user
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # generators
+  injectable_generator: 2.7.0
+  build_runner: 2.4.14
+  rx_bloc_generator: 8.0.1
+  auto_route_generator: 9.3.1
+
+  # metrics
+  lint: 2.3.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - packages/pkg_common_ui/assets/fonts/
+    - packages/pkg_common_ui/assets/icons/navigation/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: packages/pkg_common_ui/assets/fonts/poppins-semibold.ttf
+          weight: 600
+    - family: Inter
+      fonts:
+        - asset: packages/pkg_common_ui/assets/fonts/inter-bold.ttf
+          weight: 700
+        - asset: packages/pkg_common_ui/assets/fonts/inter-semibold.ttf
+          weight: 600
+        - asset: packages/pkg_common_ui/assets/fonts/inter-medium.ttf
+          weight: 500
+        - asset: packages/pkg_common_ui/assets/fonts/inter-regular.ttf
+          weight: 400

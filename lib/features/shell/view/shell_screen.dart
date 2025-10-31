@@ -33,7 +33,7 @@ class _Body extends StatelessWidget {
   Widget build(BuildContext context) {
     return AutoTabsRouter(
       routes: const [HomeRoute(), MenuRoute()],
-      transitionBuilder: (_, view, __) => view,
+      transitionBuilder: (_, view, _) => view,
       builder: (context, child) => BlocListener<ShellCubit, ShellState>(
         listener: (_, state) => AutoTabsRouter.of(context).setActiveIndex(state.view.index),
         child: child,

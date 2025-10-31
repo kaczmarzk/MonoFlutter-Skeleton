@@ -4,47 +4,51 @@ version: 0.0.0+1
 publish_to: "none"
 
 environment:
-  sdk: '>=3.1.3 <4.0.0'
-  flutter: "3.29.1"
+  sdk: ^3.9.0
+  flutter: "3.35.0"
+
+workspace:
+  - packages/pkg_common_api
+  - packages/pkg_common_ui
+  - packages/pkg_localizations
+  - packages/pkg_user
 
 dependencies:
   flutter:
     sdk: flutter
 
   # sl
-  injectable: 2.5.0
-  get_it: 8.0.3
+  injectable: 2.5.2
+  get_it: 8.2.0
 
   # l10n
-  slang: 4.4.1
-  slang_flutter: 4.4.0
+  slang: 4.9.2
+  slang_flutter: 4.9.0
 
   # db
-  hive_ce: 2.10.1
+  hive_ce: 2.15.1
 
   # state management
-  flutter_bloc: 9.0.0
+  flutter_bloc: 9.1.1
 
   # utils
   equatable: 2.0.7
-  fpdart: 1.1.1
+  fpdart: 1.2.0
   loggy: 2.0.3
-  auto_route: 9.3.0+1
+  auto_route: 10.2.0
   path_provider: 2.1.5
   rxdart: 0.28.0
   formz: 0.8.0
-  melos: 6.3.2
+  melos: 7.3.0
 
   # ui
-  flutter_svg: 2.0.17
+  flutter_svg: 2.2.1
 
   # packages
   pkg_common_api:
     path: packages/pkg_common_api
   pkg_common_ui:
     path: packages/pkg_common_ui
-  pkg_localizations:
-    path: packages/pkg_localizations
   pkg_user:
     path: packages/pkg_user
 
@@ -53,13 +57,13 @@ dev_dependencies:
     sdk: flutter
 
   # generators
-  injectable_generator: 2.7.0
-  build_runner: 2.4.14
-  rx_bloc_generator: 8.0.1
-  auto_route_generator: 9.3.1
+  injectable_generator: 2.9.0
+  build_runner: 2.10.1
+  auto_route_generator: 10.2.5
+  slang_build_runner: 4.9.0
 
   # metrics
-  lint: 2.3.0
+  lint: 2.8.0
 
 flutter:
   uses-material-design: true
@@ -82,3 +86,28 @@ flutter:
           weight: 500
         - asset: packages/pkg_common_ui/assets/fonts/inter-regular.ttf
           weight: 400
+
+melos:
+  scripts:
+    get:
+      run: |
+        melos exec -c 1 -- flutter pub get
+      description: Run 'packages get' in all packages.
+
+    analyze:
+      run: melos exec -c 1 -- flutter analyze
+      description: Analyze all packages
+
+    gen:
+      run: |
+        melos exec -c 1 -- dart run build_runner build --delete-conflicting-outputs
+      description: Regenerate code using build_runner package.
+      packageFilters:
+        dependsOn: "build_runner"
+
+    slang:
+      run: |
+        melos exec -c 1 -- dart run slang
+      description: Generate translations using slang package.
+      packageFilters:
+        dependsOn: "slang"

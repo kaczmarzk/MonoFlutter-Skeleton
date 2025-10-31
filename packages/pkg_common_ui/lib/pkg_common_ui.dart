@@ -1,4 +1,5 @@
-library common_ui;
+// packages
+export 'package:pkg_localizations/pkg_localizations.dart';
 
 // values
 export 'src/values/common_colors.dart';

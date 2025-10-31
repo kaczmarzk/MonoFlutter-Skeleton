@@ -13,7 +13,7 @@ whether for personal experiments or team projects.
 
 ```yaml
 environment:
-  sdk: '>=3.1.3 <4.0.0'
+  sdk: ^3.9.0
   flutter: "3.29.1"
 ```
 
